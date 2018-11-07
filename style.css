@@ -74,6 +74,36 @@ body, html {
   width: 100%;
   object-fit: contain;
 }
+.dots-wrapper {
+  cursor: pointer;
+  padding: 5px;
+  height: 20px;
+  position: absolute;
+  left: 10px;
+  top: 15px;
+  z-index: 2;
+}
+
+.dots {
+  background-color: #5851db;
+  width: 4px;
+  height: 4px;
+  border-radius: 100%;
+  position: absolute;
+  top: 0;
+}
+.dots::after, .dots::before {
+  content: "";
+  margin-top: 6px;
+  display: block;
+  width: 4px;
+  border-radius: 100%;
+  height: 4px;
+  background-color: #5851db;
+}
+.dots::after {
+  margin-top: 2px;
+}
 
 .wave {
   opacity: 0.4;
