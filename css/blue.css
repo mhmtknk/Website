@@ -57,9 +57,9 @@ button:hover {
 }
 
 .card-started:after {
-	background: -moz-linear-gradient(-45deg, rgba(8, 165, 193, 0.87) 0%, rgba(178, 8, 193, 0.938) 100%);
-	background: -webkit-linear-gradient(-45deg, rgba(8, 165, 193, 0.87) 0%, rgba(178, 8, 193, 0.938) 100%);
-	background: linear-gradient(135deg, rgba(8, 165, 193, 0.87) 0%, rgba(178, 8, 193, 0.938) 100%);
+	background: -moz-linear-gradient(-45deg, rgba(8, 165, 193, 0.5) 0%, rgba(178, 8, 193, 0.938) 100%);
+	background: -webkit-linear-gradient(-45deg, rgba(8, 165, 193, 0.5) 0%, rgba(178, 8, 193, 0.938) 100%);
+	background: linear-gradient(135deg, rgba(8, 165, 193, 0.5) 0%, rgba(178, 8, 193, 0.938) 100%);
 }
 
 .card-started .profile .image:before {
