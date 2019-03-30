@@ -25,7 +25,7 @@
 	<link rel="stylesheet" href="css/ionicons.css" />
 	<link rel="stylesheet" href="css/animate.css" />
 	<link rel="stylesheet" href="css/theme.css" />
-
+	<script src="js/parallax.min.js"></script>
 	<!--[if lt IE 9]>
 	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
 	<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -46,13 +46,18 @@
 				</div>
 			</div>
 		</div>
-		<!-- Bbackground -->
+		<!-- Background -->
 		<div class="background gradient"></div>
-		
-		<!-- Dots -->
-		<div class="dots dotsUp"></div>
-		<div class="dots dotsDown"></div>
 
+		<!-- Dots -->
+		
+		<div id="scene">
+		<div class="dots dotsUp" data-depth="0.1"></div>
+		<div class="dots dotsDown" data-depth="0.3"></div>
+		<div class="pictures2" data-depth="0.5"><img src="img/coffee.png" style="height:100px;" alt="coffee"></div>
+		<!-- <div class="pictures1" data-depth="0.7"><img src="img/code.png" style="height:75px;" alt="code"></div>-->
+		
+		</div>
 		<!-- Container -->
 		<div class="container opened" data-animation-in="fadeInLeft" data-animation-out="fadeOutLeft">
 			<!--Header-->
@@ -468,7 +473,12 @@
 		</div>
 	</div>
 
+	<script>
+	var scene = document.getElementById('scene');
+	var parallaxInstance = new Parallax(scene);
+	</script>
 	<!--Scripts-->
+	
 	<script src="js/jquery.min.js"></script>
 	<script src="js/jquery.slimscroll.js"></script>
 	<script src="js/scripts.js"></script>
